@@ -1,0 +1,657 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>PetsyShop mobile first grid layout</title>
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/responsive.css">
+	<link rel="stylesheet" href="css/grid.css">
+	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/font-awesome.css">
+	<link rel="stylesheet" href="css/flexslider.css">
+
+  	<link rel="stylesheet" href="owlcarousel2/owl.carousel.min.css">
+  	<link rel="stylesheet" href="owlcarousel2/owl.theme.default.min.css">
+  	
+  	<link rel="stylesheet" href="nouislider/nouislider.css">
+
+  	<script src="js/jquery-3.1.1.min.js" type="text/javascript" charset="utf-8"  ></script>
+  	<script src="owlcarousel2/owl.carousel.js" type="text/javascript" charset="utf-8"></script>
+</head>
+<body>
+<div class="wrapper">
+	<header id="header" class="">
+		<div  class="grid">
+			<div class="row">
+				<div id="logo" class="col-wd-12 col-md-5 col-sm-2">
+					<a href="" class="logo_wrapper clearfix">
+						<img src="images/logo.png" alt="">
+						<span>PETSY</span>
+						<span class="white">SHOP</span>
+					</a>
+				</div><!-- /logo -->
+			 
+				<div id="header-right" class="col-wd-12 col-md-7 col-sm-4" style="float:right">
+
+					<nav id="header-links" class="col-wd-12 col-md-12 col-sm-12">
+						<ul>
+							<li><a href="" title="">My Account</a></li>
+							<span class="spliter"></span>
+							<li><a href="" title="">Wishlist</a></li>
+							<span class="spliter"></span>
+							<li><a href="" title="">My Cart</a></li>
+							<span class="spliter"></span>
+							<li><a href="" title="">Checkout</a></li>
+							<span class="spliter"></span>
+							<li><a href="" title="">Log In</a></li>
+						</ul>
+					</nav><!-- /header-links -->
+
+					<div id="header-tools" class="col-wd-12 col-md-12 col-sm-12">
+
+						<div id="language-box" class="col-wd-3 col-md-3 col-sm-3">
+							<label >Lang:</label>
+							<select name="lang" >
+								<option value="En">En</option>
+								<option value="Vi">Vi</option>
+							</select>
+						</div>
+
+						<div id="curency-box" class="col-wd-3 col-md-3 col-sm-3">
+							<label >Curency:</label>
+							<select name="curency" >
+								<option value="$">$</option>
+								<option value="€">€</option>
+								<option value="£">£</option>
+							</select>
+						</div>
+
+						<div id="search-box" class="col-wd-3 col-md-3 col-sm-3 right">
+							<div id="search-icon">
+						    	<div id="search_block_top">
+							    	<form method="get" action="" id="searchbox">
+						       			<input class="search-key" type="text" id="search-key" name="search-key" placeholder="Enter the keyword" autocomplete="on">
+							     	</form>
+						     	</div>
+							</div>
+						</div>
+
+						<div id="cart-box" class="col-wd-3 col-md-3 col-sm-3 right">
+							<a href=""></a>
+						</div>
+
+					</div><!-- /header-tools -->
+
+				</div><!-- /header-right -->
+
+			
+
+				<nav id="main-nav" class="col-wd-12 col-md-12 col-sm-6">
+					<h2 class="menu-icon">Main navigation
+						<div class="animated-icon" onclick="animatedIcon(this)">
+						  	<div class="bar1"></div>
+						  	<div class="bar2"></div>
+						  	<div class="bar3"></div>
+						</div>
+					</h2>
+					<ul id="menu">
+						<li class="has-sub">
+						    <a href="categories.html">Women</a>
+						    <span class="btn-submenu"></span>
+						    <ul class="submenu" > 
+						        <li class="column4">
+						        	<a href="categories.html" class="submenu-title">Clothing</a>
+						        	<span class="btn-submenu"></span>
+						            <ul class="submenu" > 
+						                <li><a href="categories.html">Coats & Jackets</a></li>
+						                <li><a href="categories.html">Blazers</a></li>
+						                <li><a href="categories.html">Jackets</a></li>
+						                <li><a href="categories.html">Raincoats</a></li>
+						                <li><a href="categories.html">Jackets</a></li>
+						                <li><a href="categories.html">Raincoats</a></li>
+						            </ul>
+						        </li>
+						        <li class="column4">
+						        	<a href="categories.html" class="submenu-title">Bags</a>
+						        	<span class="btn-submenu"></span>
+						            <ul class="submenu" > 
+						                <li><a href="categories.html">Bootees tBags</a></li>
+						                <li><a href="categories.html">Blazers</a></li>
+						                <li><a href="categories.html">Shoes</a></li>
+						                <li><a href="categories.html">Jackets</a></li>
+						                <li><a href="categories.html">Jackets</a></li>
+						                <li><a href="categories.html">Raincoats</a></li>
+						            </ul>
+						        </li>
+						        <li class="column4">
+						        	<a href="categories.html" class="submenu-title">Shoes</a>
+						            <span class="btn-submenu"></span>
+						            <ul class="submenu" > 
+						                <li><a href="categories.html">Ankle Boots</a></li>
+						                <li><a href="categories.html">Footwear</a></li>
+						                <li><a href="categories.html">Clog sandals</a></li>
+						                <li><a href="categories.html">Combat Boots</a></li>
+						                <li><a href="categories.html">Jackets</a></li>
+						                <li><a href="categories.html">Raincoat</a></li>
+						            </ul>
+						      	</li>
+						      	<div class="right-block">
+									<img src="images/animal.jpg" alt="">
+									<span class="title">Aggie Animal Clinic And Dixon Pet</span>
+									<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy .</p>
+								</div>
+						    </ul>
+						</li>
+						<li><a href="categories.html" title="">MEN</a></li>
+						<li><a href="categories.html" title="">FOOTWEAR</a></li>
+						<li><a href="categories.html" title="">JEWELRY</a></li>
+						<li><a href="categories.html" title="">CUSTOM</a></li>
+					</ul>
+				</nav> <!-- /navigation -->
+
+			</div><!-- /row-->
+			
+		</div> <!-- /grid-->
+
+	</header><!-- /header -->
+
+	<div id="home-slider">
+		<div class="grid">
+			<div class="row">
+				<div class="col-wd-12 col-md-12 col-sm-12 home-slider-wrapper">
+					<div id="home-slider-inner" class="flexslider">
+					  	<ul class="slides">
+					    	<li>
+					      		<img src="images/banner/banner1.jpg" />
+					    	</li>
+					    	<li>
+					      		<img src="images/banner/banner2.jpg" />
+					    	</li>
+					   		<li>
+					      		<img src="images/banner/banner3.jpg" />
+					    	</li>
+					    	<li>
+					      		<img src="images/banner/banner4.jpg" />
+					    	</li>
+				  		</ul>
+					</div>
+					<div class="custom-navigation">
+					  	<div class="custom-controls-container">
+					  	</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div><!-- /slider -->
+
+	<div id="new-products">
+		<div class="grid">
+			<div class="row">
+				<div class="left-intro-wrapper col-wd-12 col-md-12 col-sm-3">
+					<div class="left-intro">
+						<div class="intro-wrapper">
+							<div class="intro-inner">
+								<h2 class="intro-title">NEW <br> PRODUCTS</h2>
+								<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown .</p>
+							</div>							
+						</div>
+					</div>
+				</div>
+				<div class="col-wd-12 col-md-12 col-sm-9 carousel-wrapper">
+					<div class="owl-carousel">
+						<div class="item col-sm-12 col-md-12 col-wd-12">
+							<div class="product">
+								<div class="product-inner">
+									<img src="images/product3.png" class="product-img">
+									
+									<img src="images/new_bg.png" class="new-tag">
+									<div class="product-option">
+										<a href="" class="add-cart">ADD TO CART</a>
+										<a href="" class="add-wishlist">ADD TO WISHLIST</a>
+										<a href="" class="add-compare">ADD TO COMPARE</a>
+									</div>
+								</div>
+								<h2 class="product-name"><a href="product_details.html">Raising Rabbits as Pets</a></h2>
+								<div class="price">
+									<span class="product-price">$120.00</span>
+									<span class="old-price">$150.00</span>
+								</div>
+							</div>
+						</div>
+						<div class="item col-sm-12 col-md-12 col-wd-12">
+							<div class="product">
+								<div class="product-inner">
+									<img src="images/product3.png" class="product-img">
+									
+									<img src="images/new_bg.png" class="new-tag">
+									<div class="product-option">
+										<a href="" class="add-cart">ADD TO CART</a>
+										<a href="" class="add-wishlist">ADD TO WISHLIST</a>
+										<a href="" class="add-compare">ADD TO COMPARE</a>
+									</div>
+								</div>
+								<h2 class="product-name"><a href="product_details.html">Raising Rabbits as Pets</a></h2>
+								<div class="price">
+									<span class="product-price">$120.00</span>
+									<span class="old-price">$150.00</span>
+								</div>
+							</div>
+						</div><div class="item col-sm-12 col-md-12 col-wd-12">
+							<div class="product">
+								<div class="product-inner">
+									<img src="images/product3.png" class="product-img">
+									
+									<img src="images/new_bg.png" class="new-tag">
+									<div class="product-option">
+										<a href="" class="add-cart">ADD TO CART</a>
+										<a href="" class="add-wishlist">ADD TO WISHLIST</a>
+										<a href="" class="add-compare">ADD TO COMPARE</a>
+									</div>
+								</div>
+								<h2 class="product-name"><a href="product_details.html">Raising Rabbits as Pets</a></h2>
+								<div class="price">
+									<span class="product-price">$120.00</span>
+									<span class="old-price">$150.00</span>
+								</div>
+							</div>
+						</div><div class="item col-sm-12 col-md-12 col-wd-12">
+							<div class="product">
+								<div class="product-inner">
+									<img src="images/product3.png" class="product-img">
+									
+									<img src="images/new_bg.png" class="new-tag">
+									<div class="product-option">
+										<a href="" class="add-cart">ADD TO CART</a>
+										<a href="" class="add-wishlist">ADD TO WISHLIST</a>
+										<a href="" class="add-compare">ADD TO COMPARE</a>
+									</div>
+								</div>
+								<h2 class="product-name"><a href="product_details.html">Raising Rabbits as Pets</a></h2>
+								<div class="price">
+									<span class="product-price">$120.00</span>
+									<span class="old-price">$150.00</span>
+								</div>
+							</div>
+						</div><div class="item col-sm-12 col-md-12 col-wd-12">
+							<div class="product">
+								<div class="product-inner">
+									<img src="images/product3.png" class="product-img">
+									
+									<img src="images/new_bg.png" class="new-tag">
+									<div class="product-option">
+										<a href="" class="add-cart">ADD TO CART</a>
+										<a href="" class="add-wishlist">ADD TO WISHLIST</a>
+										<a href="" class="add-compare">ADD TO COMPARE</a>
+									</div>
+								</div>
+								<h2 class="product-name"><a href="product_details.html">Raising Rabbits as Pets</a></h2>
+								<div class="price">
+									<span class="product-price">$120.00</span>
+									<span class="old-price">$150.00</span>
+								</div>
+							</div>
+						</div><div class="item col-sm-12 col-md-12 col-wd-12">
+							<div class="product">
+								<div class="product-inner">
+									<img src="images/product3.png" class="product-img">
+									
+									<img src="images/new_bg.png" class="new-tag">
+									<div class="product-option">
+										<a href="" class="add-cart">ADD TO CART</a>
+										<a href="" class="add-wishlist">ADD TO WISHLIST</a>
+										<a href="" class="add-compare">ADD TO COMPARE</a>
+									</div>
+								</div>
+								<h2 class="product-name"><a href="product_details.html">Raising Rabbits as Pets</a></h2>
+								<div class="price">
+									<span class="product-price">$120.00</span>
+									<span class="old-price">$150.00</span>
+								</div>
+							</div>
+						</div><div class="item col-sm-12 col-md-12 col-wd-12">
+							<div class="product">
+								<div class="product-inner">
+									<img src="images/product3.png" class="product-img">
+									
+									<img src="images/new_bg.png" class="new-tag">
+									<div class="product-option">
+										<a href="" class="add-cart">ADD TO CART</a>
+										<a href="" class="add-wishlist">ADD TO WISHLIST</a>
+										<a href="" class="add-compare">ADD TO COMPARE</a>
+									</div>
+								</div>
+								<h2 class="product-name"><a href="product_details.html">Raising Rabbits as Pets</a></h2>
+								<div class="price">
+									<span class="product-price">$120.00</span>
+									<span class="old-price">$150.00</span>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div><!-- /new-products -->
+
+	<div id="home-banner">
+		<div class="grid">
+			<div class="row">
+				<div class="col-wd-12 col-md-12 banner-wrapper">
+					<div class="col-wd-12 col-md-4 banners" >
+						<a href=""><img src="images/pro1.jpg" alt=""></a>
+					</div>
+					<div class="col-wd-12 col-md-4 banners">
+						<a href=""><img src="images/pro2.jpg" alt=""></a>
+					</div>
+					<div class="col-wd-12 col-md-4 banners" >
+						<a href=""><img src="images/pro3.jpg" alt=""></a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div><!-- /Home banner -->
+
+	<div id="featured-products">
+		<div class="grid">
+			<div class="row">
+				<div class="col-wd-12 col-md-12 col-sm-3 right right-intro-wrapper">
+					<div class="right-intro">
+						<div class="intro-wrapper">
+							<div class="intro-inner">
+								<h2 class="intro-title">Featured <br> PRODUCTS</h2>
+								<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the 	industry's standard dummy text ever since the 1500s, when an unknown .</p>
+							</div>
+						</div>
+						
+					</div>
+				</div>
+				<div class="col-wd-12 col-md-12 col-sm-9 carousel-wrapper">
+					<div class="owl-carousel">
+						<div class="item col-sm-12 col-md-12 col-wd-12">
+							<div class="product">
+								<div class="product-inner">
+									<img src="images/product3.png" class="product-img">
+									
+									<img src="images/hot_bg.png" class="hot-tag">
+									<div class="product-option">
+										<a href="" class="add-cart">ADD TO CART</a>
+										<a href="" class="add-wishlist">ADD TO WISHLIST</a>
+										<a href="" class="add-compare">ADD TO COMPARE</a>
+									</div>
+								</div>
+								<h2 class="product-name"><a href="product_details.html">Raising Rabbits as Pets</a></h2>
+								<div class="price">
+									<span class="product-price">$120.00</span>
+									<span class="old-price">$150.00</span>
+								</div>
+							</div>
+						</div>
+						<div class="item col-sm-12 col-md-12 col-wd-12">
+							<div class="product">
+								<div class="product-inner">
+									<img src="images/product3.png" class="product-img">
+									
+									<img src="images/hot_bg.png" class="hot-tag">
+									<div class="product-option">
+										<a href="" class="add-cart">ADD TO CART</a>
+										<a href="" class="add-wishlist">ADD TO WISHLIST</a>
+										<a href="" class="add-compare">ADD TO COMPARE</a>
+									</div>
+								</div>
+								<h2 class="product-name"><a href="product_details.html">Raising Rabbits as Pets</a></h2>
+								<div class="price">
+									<span class="product-price">$120.00</span>
+									<span class="old-price">$150.00</span>
+								</div>
+							</div>
+						</div>
+						<div class="item col-sm-12 col-md-12 col-wd-12">
+							<div class="product">
+								<div class="product-inner">
+									<img src="images/product3.png" class="product-img">
+									
+									<img src="images/hot_bg.png" class="hot-tag">
+									<div class="product-option">
+										<a href="" class="add-cart">ADD TO CART</a>
+										<a href="" class="add-wishlist">ADD TO WISHLIST</a>
+										<a href="" class="add-compare">ADD TO COMPARE</a>
+									</div>
+								</div>
+								<h2 class="product-name"><a href="product_details.html">Raising Rabbits as Pets</a></h2>
+								<div class="price">
+									<span class="product-price">$120.00</span>
+									<span class="old-price">$150.00</span>
+								</div>
+							</div>
+						</div>
+						<div class="item col-sm-12 col-md-12 col-wd-12">
+							<div class="product">
+								<div class="product-inner">
+									<img src="images/product3.png" class="product-img">
+									
+									<img src="images/hot_bg.png" class="hot-tag">
+									<div class="product-option">
+										<a href="" class="add-cart">ADD TO CART</a>
+										<a href="" class="add-wishlist">ADD TO WISHLIST</a>
+										<a href="" class="add-compare">ADD TO COMPARE</a>
+									</div>
+								</div>
+								<h2 class="product-name"><a href="product_details.html">Raising Rabbits as Pets</a></h2>
+								<div class="price">
+									<span class="product-price">$120.00</span>
+									<span class="old-price">$150.00</span>
+								</div>
+							</div>
+						</div>
+						<div class="item col-sm-12 col-md-12 col-wd-12">
+							<div class="product">
+								<div class="product-inner">
+									<img src="images/product3.png" class="product-img">
+									
+									<img src="images/hot_bg.png" class="hot-tag">
+									<div class="product-option">
+										<a href="" class="add-cart">ADD TO CART</a>
+										<a href="" class="add-wishlist">ADD TO WISHLIST</a>
+										<a href="" class="add-compare">ADD TO COMPARE</a>
+									</div>
+								</div>
+								<h2 class="product-name"><a href="product_details.html">Raising Rabbits as Pets</a></h2>
+								<div class="price">
+									<span class="product-price">$120.00</span>
+									<span class="old-price">$150.00</span>
+								</div>
+							</div>
+						</div>
+						<div class="item col-sm-12 col-md-12 col-wd-12">
+							<div class="product">
+								<div class="product-inner">
+									<img src="images/product3.png" class="product-img">
+									
+									<img src="images/hot_bg.png" class="hot-tag">
+									<div class="product-option">
+										<a href="" class="add-cart">ADD TO CART</a>
+										<a href="" class="add-wishlist">ADD TO WISHLIST</a>
+										<a href="" class="add-compare">ADD TO COMPARE</a>
+									</div>
+								</div>
+								<h2 class="product-name"><a href="product_details.html">Raising Rabbits as Pets</a></h2>
+								<div class="price">
+									<span class="product-price">$120.00</span>
+									<span class="old-price">$150.00</span>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div><!-- /Featured-products -->
+	<footer class="clearfix">
+		<div id="partners">
+			<div class="grid">
+				<div class="row">
+					<div class="col-wd-12 col-md-12 partner-wrapper">
+						<div class="owl-carousel">
+							<a href=""><img src="images/partners-logo.jpg" alt=""></a>
+							<a href=""><img src="images/partners-logo.jpg" alt=""></a>
+							<a href=""><img src="images/partners-logo.jpg" alt=""></a>
+							<a href=""><img src="images/partners-logo.jpg" alt=""></a>
+							<a href=""><img src="images/partners-logo.jpg" alt=""></a>
+							<a href=""><img src="images/partners-logo.jpg" alt=""></a>
+							<a href=""><img src="images/partners-logo.jpg" alt=""></a>
+							<a href=""><img src="images/partners-logo.jpg" alt=""></a>
+							<a href=""><img src="images/partners-logo.jpg" alt=""></a>
+							<a href=""><img src="images/partners-logo.jpg" alt=""></a>
+							<a href=""><img src="images/partners-logo.jpg" alt=""></a>
+							<a href=""><img src="images/partners-logo.jpg" alt=""></a>
+							<a href=""><img src="images/partners-logo.jpg" alt=""></a>
+							<a href=""><img src="images/partners-logo.jpg" alt=""></a>
+							<a href=""><img src="images/partners-logo.jpg" alt=""></a>
+							<a href=""><img src="images/partners-logo.jpg" alt=""></a>
+						</div>
+						<span class="btnPrev2"></span>
+						<span class="btnNext2"></span>
+					</div>
+				</div>
+			</div>
+		</div><!-- /partners -->
+
+		<div id="footer">
+			<div class="grid">
+				<div class="row first-row" >
+					<div class="col-wd-12 col-md-3 col-sm-3">
+						<div class="footer-column">
+							<div class="footer-intro">
+								<img src="images/responsive_website2.png">
+								<h2 class="intro-title">REPOSTIVE WEB</h2>
+								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In congue, justo non cursus adipiscing, dui nibh scelerisque justo, quis pretium.</p>
+							</div>
+						</div>
+					</div>
+					<div class="col-wd-12 col-md-3 col-sm-3">
+						<div class="footer-column">
+							<div class="footer-info">
+								<span class="info-title">FOLOW ME ON:</span>
+								<div class="socials clearfix">
+									<a href=""><img src="images/social_fb.png"></a>
+									<a href=""><img src="images/social_twiter.png"></a>
+									<a href=""><img src="images/social_gg.png"></a>
+									<a href=""><img src="images/social_pinterest.png"></a>
+									<a href=""><img src="images/social_flirk.png"></a>
+								</div>
+								<span class="info-title">NEWSLETTER</span>
+								<form action="" method="post" accept-charset="utf-8">
+									<input type="email" name="subscribe" placeholder="YOUR EMAIL">
+									<input type="submit" name="submit" value="SUBSCRIBE">
+								</form>
+							</div>
+						</div>
+					</div>
+					<div class="col-wd-12 col-md-3 col-sm-3">
+						<div class="footer-column">
+							<div class="footer-info">
+								<span class="info-title">ABOUT US</span>
+								<p class="information">Lorem Ipsum is simply dummy text of the printing and typesetting industry.consectetur adipisicing elit, sed do eiusmod tempor.</p>
+								<p class="address">287 Cheesequake Road, Bldg 1BParlin, NJ 08859</p>
+								<p class="tel">(+123) 456 789</p>
+								<p class="email"><a href="mailto:Support@plazathemes.com">Support@plazathemes.com</a></p>
+							</div>
+						</div>
+					</div>
+					<div class="col-wd-12 col-md-3 col-sm-3">
+						<div class="footer-column">
+							<div class="footer-info">
+								<span class="info-title">MAP</span>
+								<div id="map">
+									<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d196269.44367648909!2d-86.21721581117549!3d39.76861782490573!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x886b50ffa7796a03%3A0xd68e9df640b9ea7c!2sIndianapolis%2C+IN!5e0!3m2!1sen!2s!4v1486635291029" width="100%" height="100%" frameborder="0" style="border:0" allowfullscreen></iframe>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="row second-row" >
+					<div class="col-wd-12 col-md-3 col-sm-3">
+						<div class="footer-column">
+							<div class="footer-info first-div">
+								<span class="info-title">INFORMATION</span>
+								<ul>
+									<li><a href="">About Us</a></li>
+									<li><a href="">Delivery</a></li>
+									<li><a href="">Contact Us</a></li>
+									<li><a href="">Privacy Pollicy</a></li>
+									<li><a href="">Terms & Conditions</a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div class="col-wd-12 col-md-3 col-sm-3">
+						<div class="footer-column">
+							<div class="footer-info">
+								<span class="info-title">CUSTOMER SERVICE</span>
+								<ul>
+									<li><a href="">About Us</a></li>
+									<li><a href="">Delivery</a></li>
+									<li><a href="">Contact Us</a></li>
+									<li><a href="">Privacy Pollicy</a></li>
+									<li><a href="">Terms & Conditions</a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div class="col-wd-12 col-md-3 col-sm-3">
+						<div class="footer-column">
+							<div class="footer-info">
+								<span class="info-title">EXTRAS</span>
+								<ul>
+									<li><a href="">About Us</a></li>
+									<li><a href="">Delivery</a></li>
+									<li><a href="">Contact Us</a></li>
+									<li><a href="">Privacy Pollicy</a></li>
+									<li><a href="">Terms & Conditions</a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div class="col-wd-12 col-md-3 col-sm-3">
+						<div class="footer-column">
+							<div class="footer-info">
+								<span class="info-title">MY ACCOUNT</span>
+								<ul>
+									<li><a href="">About Us</a></li>
+									<li><a href="">Delivery</a></li>
+									<li><a href="">Contact Us</a></li>
+									<li><a href="">Privacy Pollicy</a></li>
+									<li><a href="">Terms & Conditions</a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+	</footer><!-- /footer -->
+	<div id="copyright">
+		<div class="grid">
+			<div class="row">
+				<div class="col-wd-12 col-md-12 col-sm-12">
+					<div class="col-wd-12 col-md-12 col-sm-4 copyright left">
+						<p>&copy; 2012 <a href="" title="">Magento Demo Store</a>. All Rights Reserved.</p>
+					</div>
+					<div class="col-wd-12 col-md-12 col-sm-4 payments right">
+						<img src="images/payment.png" alt="">
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	<script src="js/menu.js" type="text/javascript" charset="utf-8" ></script>
+	<script src="js/application.js" type="text/javascript" charset="utf-8"  ></script>
+	<script src="js/jquery.flexslider.js" type="text/javascript" charset="utf-8"></script>
+	<script src="nouislider/nouislider.js" type="text/javascript" charset="utf-8" async defer></script>
+</div>
+</body>
+</html>

@@ -1,0 +1,832 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>PetsyShop mobile first grid layout</title>
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/responsive.css">
+	<link rel="stylesheet" href="css/grid.css">
+	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/font-awesome.css">
+	<link rel="stylesheet" href="css/flexslider.css">
+
+  	<link rel="stylesheet" href="owlcarousel2/owl.carousel.min.css">
+  	<link rel="stylesheet" href="owlcarousel2/owl.theme.default.min.css">
+  	
+  	<link rel="stylesheet" href="nouislider/nouislider.css">
+
+  	<script src="js/jquery-3.1.1.min.js" type="text/javascript" charset="utf-8"  ></script>
+  	<script src="owlcarousel2/owl.carousel.js" type="text/javascript" charset="utf-8"></script>
+</head>
+<body>
+<div class="wrapper">
+	<header id="header" class="">
+		<div  class="grid">
+			<div class="row">
+				<div id="logo" class="col-wd-12 col-md-5 col-sm-2">
+					<a href="index.html" class="logo_wrapper clearfix">
+						<img src="images/logo.png" alt="">
+						<span>PETSY</span>
+						<span class="white">SHOP</span>
+					</a>
+				</div><!-- /logo -->
+			 
+				<div id="header-right" class="col-wd-12 col-md-7 col-sm-4" style="float:right">
+
+					<nav id="header-links" class="col-wd-12 col-md-12 col-sm-12">
+						<ul>
+							<li><a href="" title="">My Account</a></li>
+							<span class="spliter"></span>
+							<li><a href="" title="">Wishlist</a></li>
+							<span class="spliter"></span>
+							<li><a href="" title="">My Cart</a></li>
+							<span class="spliter"></span>
+							<li><a href="" title="">Checkout</a></li>
+							<span class="spliter"></span>
+							<li><a href="" title="">Log In</a></li>
+						</ul>
+					</nav><!-- /header-links -->
+
+					<div id="header-tools" class="col-wd-12 col-md-12 col-sm-12">
+
+						<div id="language-box" class="col-wd-3 col-md-3 col-sm-3">
+							<label >Lang:</label>
+							<select name="lang" >
+								<option value="En">En</option>
+								<option value="Vi">Vi</option>
+							</select>
+						</div>
+
+						<div id="curency-box" class="col-wd-3 col-md-3 col-sm-3">
+							<label >Curency:</label>
+							<select name="curency" >
+								<option value="$">$</option>
+								<option value="€">€</option>
+								<option value="£">£</option>
+							</select>
+						</div>
+
+						<div id="search-box" class="col-wd-3 col-md-3 col-sm-3 right">
+							<div id="search-icon">
+						    	<div id="search_block_top">
+							    	<form method="get" action="" id="searchbox">
+						       			<input class="search-key" type="text" id="search-key" name="search-key" placeholder="Enter the keyword" autocomplete="on">
+							     	</form>
+						     	</div>
+							</div>
+						</div>
+
+						<div id="cart-box" class="col-wd-3 col-md-3 col-sm-3 right">
+							<a href=""></a>
+						</div>
+
+					</div><!-- /header-tools -->
+
+				</div><!-- /header-right -->
+
+			
+
+				<nav id="main-nav" class="col-wd-12 col-md-12 col-sm-6">
+					<h2 class="menu-icon">Main navigation
+						<div class="animated-icon" onclick="animatedIcon(this)">
+						  	<div class="bar1"></div>
+						  	<div class="bar2"></div>
+						  	<div class="bar3"></div>
+						</div>
+					</h2>
+					<ul id="menu">
+						<li class="has-sub">
+						    <a href="">Women</a>
+						    <span class="btn-submenu"></span>
+						    <ul class="submenu" > 
+						        <li class="column4">
+						        	<a href="categories.html" class="submenu-title">Clothing</a>
+						        	<span class="btn-submenu"></span>
+						            <ul class="submenu" > 
+						                <li><a href="categories.html">Coats & Jackets</a></li>
+						                <li><a href="categories.html">Blazers</a></li>
+						                <li><a href="categories.html">Jackets</a></li>
+						                <li><a href="categories.html">Raincoats</a></li>
+						                <li><a href="categories.html">Jackets</a></li>
+						                <li><a href="categories.html">Raincoats</a></li>
+						            </ul>
+						        </li>
+						        <li class="column4">
+						        	<a href="categories.html" class="submenu-title">Bags</a>
+						        	<span class="btn-submenu"></span>
+						            <ul class="submenu" > 
+						                <li><a href="categories.html">Bootees tBags</a></li>
+						                <li><a href="categories.html">Blazers</a></li>
+						                <li><a href="categories.html">Shoes</a></li>
+						                <li><a href="categories.html">Jackets</a></li>
+						                <li><a href="categories.html">Jackets</a></li>
+						                <li><a href="categories.html">Raincoats</a></li>
+						            </ul>
+						        </li>
+						        <li class="column4">
+						        	<a href="categories.html" class="submenu-title">Shoes</a>
+						            <span class="btn-submenu"></span>
+						            <ul class="submenu" > 
+						                <li><a href="categories.html">Ankle Boots</a></li>
+						                <li><a href="categories.html">Footwear</a></li>
+						                <li><a href="categories.html">Clog sandals</a></li>
+						                <li><a href="categories.html">Combat Boots</a></li>
+						                <li><a href="categories.html">Jackets</a></li>
+						                <li><a href="categories.html">Raincoat</a></li>
+						            </ul>
+						      	</li>
+						      	<div class="right-block">
+									<img src="images/animal.jpg" alt="">
+									<span class="title">Aggie Animal Clinic And Dixon Pet</span>
+									<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy .</p>
+								</div>
+						    </ul>
+						</li>
+						<li><a href="categories.html" title="">MEN</a></li>
+						<li><a href="categories.html" title="">FOOTWEAR</a></li>
+						<li><a href="categories.html" title="">JEWELRY</a></li>
+						<li><a href="categories.html" title="">CUSTOM</a></li>
+					</ul>
+				</nav> <!-- /navigation -->
+
+			</div><!-- /row-->
+			
+		</div> <!-- /grid-->
+
+	</header><!-- /header -->
+
+	<div id="main-content">
+		<div class="grid">
+			<div class="row">
+				<div id="breadcrum" class="col-wd-12 col-md-12 col-sm-12">
+					<a href="">Home</a>
+					<span class="spliter"></span>
+					<span class="current-page">Women</span>
+				</div><!-- /breadcrum -->
+			</div><!-- /row -->
+
+			<div class="row main-content">
+				<div id="left-column" class="col-wd-12 col-md-12 col-sm-9">
+					<div id="category-banner" class="col-wd-12 col-wd-12 col-sm-12">
+						<a href=""><img src="images/categories-banner.jpg"></a>
+					</div><!-- /category-banner -->
+
+					<div id="toolsbar" class="col-wd-12 col-md-12 col-sm-12">
+						<div id="switch-view" class="col-wd-12 col-md-12 col-sm-4" >
+							<a   class="grid-switcher active"><span>Grid</span></a>
+							<a   class="list-switcher"><span>List</span></a>
+						</div><!-- /switch-view -->
+
+						<div id="view-options" class="col-wd-12 col-md-8 col-sm-4 clearfix">
+							
+							<div class="sort-by-wrapper">
+								<label for="sort-by">Sort by</label>
+								<select name="sort-by" id="sort-by">
+									<option value="">Position</option>
+									<option value="">Price</option>
+									<option value="">Name</option>
+								</select>
+								<span><img src="images/sort-desc.png"></span>
+							</div>
+							
+							<div class="show-wrapper">
+								<label for="show">Show</label>
+								<select name="show" id="show">
+									<option value="">9</option>
+									<option value="">12</option>
+									<option value="">15</option>
+								</select>
+								<span>per page</span>
+							</div>
+							
+						</div><!-- /view-options -->
+
+						<div id="pagination" class="col-wd-12 col-md-4 col-sm-4">
+							<div class="paging-wrapper">
+								<label>Pages</label>
+								<div class="pagination">
+									<ul>
+										<li><a href="" class="active">1</a></li>
+										<li><a href="" >2</a></li>
+										<li><a href="">3</a></li>
+										<li><a href="">4</a></li>
+										<li><a href="" class="next">Next</a></li>
+									</ul>
+								</div>
+							</div>
+							
+						</div><!-- /pagination -->
+					</div><!-- /toolsbar -->
+
+					<div id="category-content" class="col-wd-12 col-md-12 col-sm-12 grid-view">
+						<div  class="category-content-wrapper">
+							<div class="item col-sm-4 col-md-12 col-wd-12">
+								<div class="product clearfix">
+									<div class="product-inner">
+										<img src="images/product3.png" class="product-img">
+										<img src="images/new_bg.png" class="new-tag">
+									</div>
+									<div class="btm-block">
+										
+										<h2 class="product-name"><a href="product_details.html">Raising Rabbits as Pets</a></h2>
+										<div class="price">
+											<span class="product-price">$120.00</span>
+											<span class="old-price">$150.00</span>
+										</div>
+										<p  class="description">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+										<div class="product-option clearfix">
+											<a href="" class="add-cart clearfix"><div class="option-img"></div><span>ADD TO CART</span></a>
+											<a href="" class="add-wishlist clearfix"><div class="option-img"></div><span>ADD TO WISHLIST</span></a>
+											<a href="" class="add-compare clearfix"><div class="option-img"></div><span>ADD TO COMPARE</span></a>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="item col-sm-4 col-md-12 col-wd-12">
+								<div class="product clearfix">
+									<div class="product-inner">
+										<img src="images/product3.png" class="product-img">
+										<img src="images/new_bg.png" class="new-tag">
+									</div>
+									<div class="btm-block">
+										
+										<h2 class="product-name"><a href="product_details.html">Raising Rabbits as Pets</a></h2>
+										<div class="price">
+											<span class="product-price">$120.00</span>
+											<span class="old-price">$150.00</span>
+										</div>
+										<p  class="description">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+										<div class="product-option clearfix">
+											<a href="" class="add-cart clearfix"><div class="option-img"></div><span>ADD TO CART</span></a>
+											<a href="" class="add-wishlist clearfix"><div class="option-img"></div><span>ADD TO WISHLIST</span></a>
+											<a href="" class="add-compare clearfix"><div class="option-img"></div><span>ADD TO COMPARE</span></a>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="item col-sm-4 col-md-12 col-wd-12">
+								<div class="product clearfix">
+									<div class="product-inner">
+										<img src="images/product3.png" class="product-img">
+										<img src="images/new_bg.png" class="new-tag">
+									</div>
+									<div class="btm-block">
+										
+										<h2 class="product-name"><a href="product_details.html">Raising Rabbits as Pets</a></h2>
+										<div class="price">
+											<span class="product-price">$120.00</span>
+											<span class="old-price">$150.00</span>
+										</div>
+										<p  class="description">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+										<div class="product-option clearfix">
+											<a href="" class="add-cart clearfix"><div class="option-img"></div><span>ADD TO CART</span></a>
+											<a href="" class="add-wishlist clearfix"><div class="option-img"></div><span>ADD TO WISHLIST</span></a>
+											<a href="" class="add-compare clearfix"><div class="option-img"></div><span>ADD TO COMPARE</span></a>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="item col-sm-4 col-md-12 col-wd-12">
+								<div class="product clearfix">
+									<div class="product-inner">
+										<img src="images/product3.png" class="product-img">
+										<img src="images/new_bg.png" class="new-tag">
+									</div>
+									<div class="btm-block">
+										
+										<h2 class="product-name"><a href="product_details.html">Raising Rabbits as Pets</a></h2>
+										<div class="price">
+											<span class="product-price">$120.00</span>
+											<span class="old-price">$150.00</span>
+										</div>
+										<p  class="description">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+										<div class="product-option clearfix">
+											<a href="" class="add-cart clearfix"><div class="option-img"></div><span>ADD TO CART</span></a>
+											<a href="" class="add-wishlist clearfix"><div class="option-img"></div><span>ADD TO WISHLIST</span></a>
+											<a href="" class="add-compare clearfix"><div class="option-img"></div><span>ADD TO COMPARE</span></a>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="item col-sm-4 col-md-12 col-wd-12">
+								<div class="product clearfix">
+									<div class="product-inner">
+										<img src="images/product3.png" class="product-img">
+										<img src="images/new_bg.png" class="new-tag">
+									</div>
+									<div class="btm-block">
+										
+										<h2 class="product-name"><a href="product_details.html">Raising Rabbits as Pets</a></h2>
+										<div class="price">
+											<span class="product-price">$120.00</span>
+											<span class="old-price">$150.00</span>
+										</div>
+										<p  class="description">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+										<div class="product-option clearfix">
+											<a href="" class="add-cart clearfix"><div class="option-img"></div><span>ADD TO CART</span></a>
+											<a href="" class="add-wishlist clearfix"><div class="option-img"></div><span>ADD TO WISHLIST</span></a>
+											<a href="" class="add-compare clearfix"><div class="option-img"></div><span>ADD TO COMPARE</span></a>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="item col-sm-4 col-md-12 col-wd-12">
+								<div class="product clearfix">
+									<div class="product-inner">
+										<img src="images/product3.png" class="product-img">
+										<img src="images/new_bg.png" class="new-tag">
+									</div>
+									<div class="btm-block">
+										
+										<h2 class="product-name"><a href="product_details.html">Raising Rabbits as Pets</a></h2>
+										<div class="price">
+											<span class="product-price">$120.00</span>
+											<span class="old-price">$150.00</span>
+										</div>
+										<p  class="description">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+										<div class="product-option clearfix">
+											<a href="" class="add-cart clearfix"><div class="option-img"></div><span>ADD TO CART</span></a>
+											<a href="" class="add-wishlist clearfix"><div class="option-img"></div><span>ADD TO WISHLIST</span></a>
+											<a href="" class="add-compare clearfix"><div class="option-img"></div><span>ADD TO COMPARE</span></a>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="item col-sm-4 col-md-12 col-wd-12">
+								<div class="product clearfix">
+									<div class="product-inner">
+										<img src="images/product3.png" class="product-img">
+										<img src="images/new_bg.png" class="new-tag">
+									</div>
+									<div class="btm-block">
+										
+										<h2 class="product-name"><a href="product_details.html">Raising Rabbits as Pets</a></h2>
+										<div class="price">
+											<span class="product-price">$120.00</span>
+											<span class="old-price">$150.00</span>
+										</div>
+										<p  class="description">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+										<div class="product-option clearfix">
+											<a href="" class="add-cart clearfix"><div class="option-img"></div><span>ADD TO CART</span></a>
+											<a href="" class="add-wishlist clearfix"><div class="option-img"></div><span>ADD TO WISHLIST</span></a>
+											<a href="" class="add-compare clearfix"><div class="option-img"></div><span>ADD TO COMPARE</span></a>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="item col-sm-4 col-md-12 col-wd-12">
+								<div class="product clearfix">
+									<div class="product-inner">
+										<img src="images/product3.png" class="product-img">
+										<img src="images/new_bg.png" class="new-tag">
+									</div>
+									<div class="btm-block">
+										
+										<h2 class="product-name"><a href="product_details.html">Raising Rabbits as Pets</a></h2>
+										<div class="price">
+											<span class="product-price">$120.00</span>
+											<span class="old-price">$150.00</span>
+										</div>
+										<p  class="description">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+										<div class="product-option clearfix">
+											<a href="" class="add-cart clearfix"><div class="option-img"></div><span>ADD TO CART</span></a>
+											<a href="" class="add-wishlist clearfix"><div class="option-img"></div><span>ADD TO WISHLIST</span></a>
+											<a href="" class="add-compare clearfix"><div class="option-img"></div><span>ADD TO COMPARE</span></a>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="item col-sm-4 col-md-12 col-wd-12">
+								<div class="product clearfix">
+									<div class="product-inner">
+										<img src="images/product3.png" class="product-img">
+										<img src="images/new_bg.png" class="new-tag">
+									</div>
+									<div class="btm-block">
+										
+										<h2 class="product-name"><a href="product_details.html">Raising Rabbits as Pets</a></h2>
+										<div class="price">
+											<span class="product-price">$120.00</span>
+											<span class="old-price">$150.00</span>
+										</div>
+										<p  class="description">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+										<div class="product-option clearfix">
+											<a href="" class="add-cart clearfix"><div class="option-img"></div><span>ADD TO CART</span></a>
+											<a href="" class="add-wishlist clearfix"><div class="option-img"></div><span>ADD TO WISHLIST</span></a>
+											<a href="" class="add-compare clearfix"><div class="option-img"></div><span>ADD TO COMPARE</span></a>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="item col-sm-4 col-md-12 col-wd-12">
+								<div class="product clearfix">
+									<div class="product-inner">
+										<img src="images/product3.png" class="product-img">
+										<img src="images/new_bg.png" class="new-tag">
+									</div>
+									<div class="btm-block">
+										
+										<h2 class="product-name"><a href="product_details.html">Raising Rabbits as Pets</a></h2>
+										<div class="price">
+											<span class="product-price">$120.00</span>
+											<span class="old-price">$150.00</span>
+										</div>
+										<p  class="description">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+										<div class="product-option clearfix">
+											<a href="" class="add-cart clearfix"><div class="option-img"></div><span>ADD TO CART</span></a>
+											<a href="" class="add-wishlist clearfix"><div class="option-img"></div><span>ADD TO WISHLIST</span></a>
+											<a href="" class="add-compare clearfix"><div class="option-img"></div><span>ADD TO COMPARE</span></a>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="item col-sm-4 col-md-12 col-wd-12">
+								<div class="product clearfix">
+									<div class="product-inner">
+										<img src="images/product3.png" class="product-img">
+										<img src="images/new_bg.png" class="new-tag">
+									</div>
+									<div class="btm-block">
+										
+										<h2 class="product-name"><a href="product_details.html">Raising Rabbits as Pets</a></h2>
+										<div class="price">
+											<span class="product-price">$120.00</span>
+											<span class="old-price">$150.00</span>
+										</div>
+										<p  class="description">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+										<div class="product-option clearfix">
+											<a href="" class="add-cart clearfix"><div class="option-img"></div><span>ADD TO CART</span></a>
+											<a href="" class="add-wishlist clearfix"><div class="option-img"></div><span>ADD TO WISHLIST</span></a>
+											<a href="" class="add-compare clearfix"><div class="option-img"></div><span>ADD TO COMPARE</span></a>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="item col-sm-4 col-md-12 col-wd-12">
+								<div class="product clearfix">
+									<div class="product-inner">
+										<img src="images/product3.png" class="product-img">
+										<img src="images/new_bg.png" class="new-tag">
+									</div>
+									<div class="btm-block">
+										
+										<h2 class="product-name"><a href="product_details.html">Raising Rabbits as Pets</a></h2>
+										<div class="price">
+											<span class="product-price">$120.00</span>
+											<span class="old-price">$150.00</span>
+										</div>
+										<p  class="description">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+										<div class="product-option clearfix">
+											<a href="" class="add-cart clearfix"><div class="option-img"></div><span>ADD TO CART</span></a>
+											<a href="" class="add-wishlist clearfix"><div class="option-img"></div><span>ADD TO WISHLIST</span></a>
+											<a href="" class="add-compare clearfix"><div class="option-img"></div><span>ADD TO COMPARE</span></a>
+										</div>
+									</div>
+								</div>
+							</div>
+
+						</div><!-- /category-content-wrapper -->	
+					</div><!-- /category-content -->
+
+					<div id="toolsbar" class="col-wd-12 col-md-12 col-sm-12 toolsbar-btm">
+						<div id="switch-view" class="col-wd-12 col-md-12 col-sm-4" >
+							<a   class="grid-switcher active"><span>Grid</span></a>
+							<a   class="list-switcher"><span>List</span></a>
+						</div><!-- /switch-view -->
+
+						<div id="view-options" class="col-wd-12 col-md-8 col-sm-4 clearfix">
+							
+							<div class="sort-by-wrapper">
+								<label for="sort-by">Sort by</label>
+								<select name="sort-by" id="sort-by">
+									<option value="">Position</option>
+									<option value="">Price</option>
+									<option value="">Name</option>
+								</select>
+							</div>
+							
+							<div class="show-wrapper">
+								<label for="show">Show</label>
+								<select name="show" id="show">
+									<option value="">9</option>
+									<option value="">12</option>
+									<option value="">15</option>
+								</select>
+								<span>per page</span>
+							</div>
+							
+						</div><!-- /view-options -->
+
+						<div id="pagination" class="col-wd-12 col-md-4 col-sm-4">
+							<div class="paging-wrapper">
+								<label>Pages</label>
+								<div class="pagination">
+									<ul>
+									    <li><a href="" class="prev">Prev</a></li>
+										<li><a href="" class="active">1</a></li>
+										<li><a href="" >2</a></li>
+										<li><a href="">3</a></li>
+										<li><a href="">4</a></li>
+										<li><a href="" class="next">Next</a></li>
+									</ul>
+								</div>
+							</div>
+							
+						</div><!-- /pagination -->
+					</div><!-- /toolsbar -->
+
+				</div><!-- /left-column -->
+
+				<div id="right-column" class="col-wd-12 col-md-12 col-sm-3">
+					<div id="category" class="col-wd-12">
+						<div class="title">
+							<h2>Category</h2>
+						</div>
+						<div class="content">
+							<ul>
+								<li><a href="" title="">WOMEN</a><span class="grower closed"></span>
+									<ul>
+										<li><a href="" title="">CLOTHING</a>
+											<span class="grower closed"></span>
+											<ul>
+												<li><a href="" title="">1</a></li>
+												<li><a href="" title="">2</a></li>
+												<li><a href="" title="">3</a></li>
+											</ul>
+										</li>
+										<li><a href="" title="">SHOES</a></li>
+										<li><a href="" title="">BAGS</a></li>
+									</ul>
+								</li>
+								<li><a href="" title="">MEN</a><span class="grower closed"></span>
+									<ul>
+										<li><a href="" title="">CLOTHING</a></li>
+										<li><a href="" title="">SHOES</a></li>
+										<li><a href="" title="">BAGS</a></li>
+									</ul>
+								</li>
+								<li><a href="" title="">FOOTWEAR</a><span class="grower closed"></span>
+									<ul>
+										<li><a href="" title="">CLOTHING</a></li>
+										<li><a href="" title="">SHOES</a></li>
+										<li><a href="" title="">BAGS</a></li>
+									</ul>
+								</li>
+								<li><a href="" title="">JEWELRY</a><span class="grower closed"></span>
+									<ul>
+										<li><a href="" title="">CLOTHING</a></li>
+										<li><a href="" title="">SHOES</a></li>
+										<li><a href="" title="">BAGS</a></li>
+									</ul>
+								</li>
+								<li><a href="" title="">SPORT</a></span></li>
+								<li><a href="" title="">KIDS</a></span></li>
+							</ul>
+						</div>
+					</div><!-- /category -->
+
+					<div id="shop-by" class="col-wd-12">
+						<div class="title">
+							<h2>Shop by</h2>
+						</div>
+						<div class="content">
+							<div id="shop-category">
+								<div class="sub-title">
+									<h3>Category</h3>
+								</div>
+								<div class="sub-content">
+									<ul>
+										<li><a href="" title="">Women <span>(12)</span></a></li>
+										<li><a href="" title="">Men <span>(10)</span></a></li>
+										<li><a href="" title="">Footwear <span>(9)</span></a></li>
+										<li><a href="" title="">Jewelry <span>(22)</span></a></li>
+										<li><a href="" title="">Sport <span>(32)</span></a></li>
+										<li><a href="" title="">Kids <span>(15)</span></a></li>
+									</ul>
+								</div>
+							</div>
+							<div id="shop-price">
+								<div class="sub-title">
+									<h3>Price</h3>
+								</div>
+								<div class="sub-content">
+									<div class="values">
+										$<span id="lower-price">100.00</span> - $<span id="upper-price">1000.00</span>
+									</div>
+									<div id="range-slider">
+										
+									</div>
+								</div>
+							</div>
+							<div id="colors">
+								<div class="sub-title">
+									<h3>Colors</h3>
+								</div>
+								<div class="sub-content">
+									<ul>
+										<li><a href="" title="">Blue <span>(2)</span></a></li>
+										<li><a href="" title="">Green <span>(1)</span></a></li>
+										<li><a href="" title="">Gray <span>(1)</span></a></li>
+										<li><a href="" title="">Red <span>(1)</span></a></li>
+										<li><a href="" title="">White <span>(1)</span></a></li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div><!-- /shop-by -->
+
+					<div id="best-sale" class="col-wd-12">
+						<div class="title">
+							<h2>Best sale</h2>
+						</div>
+						<div class="content">
+							<div class="best-sale-item clearfix">
+								<a class="best-sale-thumbnail" href="" title=""><img  src="images/best-sale-1.jpg"></a>
+								<div class="details-block">
+									<h2 class="best-sale-item-name"><a href="product_details.html">Dog and Pet Portrait Photography</a></h2>
+									<div class="price">
+										<span class="product-price">$120.00</span>
+										<span class="old-price">$150.00</span>
+									</div>
+								</div>
+							</div>
+							<div class="best-sale-item clearfix">
+								<a class="best-sale-thumbnail" href="" title=""><img  src="images/best-sale-1.jpg"></a>
+								<div class="details-block">
+									<h2 class="best-sale-item-name"><a href="product_details.html">Dog and Pet Portrait Photography</a></h2>
+									<div class="price">
+										<span class="product-price">$120.00</span>
+										<span class="old-price">$150.00</span>
+									</div>
+								</div>
+							</div>
+							<div class="best-sale-item clearfix">
+								<a class="best-sale-thumbnail" href="" title=""><img  src="images/best-sale-1.jpg"></a>
+								<div class="details-block">
+									<h2 class="best-sale-item-name"><a href="product_details.html">Dog and Pet Portrait Photography</a></h2>
+									<div class="price">
+										<span class="product-price">$120.00</span>
+										<span class="old-price">$150.00</span>
+									</div>
+								</div>
+							</div>
+							
+						</div>
+					</div><!-- /best-sale -->
+
+					<div id="right-btm-banner" class="col-wd-12">
+						<img src="images/right-column-btm-banner.jpg">
+					</div><!-- /banner -->
+				</div><!-- /right-column -->
+			</div><!-- /row -->
+		</div>
+	</div>		
+
+
+
+
+
+
+
+
+	<footer class="clearfix">
+
+		<div id="footer">
+			<div class="grid">
+				<div class="row first-row" >
+					<div class="col-wd-12 col-md-3 col-sm-3">
+						<div class="footer-column">
+							<div class="footer-intro">
+								<img src="images/responsive_website2.png">
+								<h2 class="intro-title">REPOSTIVE WEB</h2>
+								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In congue, justo non cursus adipiscing, dui nibh scelerisque justo, quis pretium.</p>
+							</div>
+						</div>
+					</div>
+					<div class="col-wd-12 col-md-3 col-sm-3">
+						<div class="footer-column">
+							<div class="footer-info">
+								<span class="info-title">FOLOW ME ON:</span>
+								<div class="socials clearfix">
+									<a href=""><img src="images/social_fb.png"></a>
+									<a href=""><img src="images/social_twiter.png"></a>
+									<a href=""><img src="images/social_gg.png"></a>
+									<a href=""><img src="images/social_pinterest.png"></a>
+									<a href=""><img src="images/social_flirk.png"></a>
+								</div>
+								<span class="info-title">NEWSLETTER</span>
+								<form action="" method="post" accept-charset="utf-8">
+									<input type="email" name="subscribe" placeholder="YOUR EMAIL">
+									<input type="submit" name="submit" value="SUBSCRIBE">
+								</form>
+							</div>
+						</div>
+					</div>
+					<div class="col-wd-12 col-md-3 col-sm-3">
+						<div class="footer-column">
+							<div class="footer-info">
+								<span class="info-title">ABOUT US</span>
+								<p class="information">Lorem Ipsum is simply dummy text of the printing and typesetting industry.consectetur adipisicing elit, sed do eiusmod tempor.</p>
+								<p class="address">287 Cheesequake Road, Bldg 1BParlin, NJ 08859</p>
+								<p class="tel">(+123) 456 789</p>
+								<p class="email"><a href="mailto:Support@plazathemes.com">Support@plazathemes.com</a></p>
+							</div>
+						</div>
+					</div>
+					<div class="col-wd-12 col-md-3 col-sm-3">
+						<div class="footer-column">
+							<div class="footer-info">
+								<span class="info-title">MAP</span>
+								<div id="map">
+									<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d196269.44367648909!2d-86.21721581117549!3d39.76861782490573!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x886b50ffa7796a03%3A0xd68e9df640b9ea7c!2sIndianapolis%2C+IN!5e0!3m2!1sen!2s!4v1486635291029" width="100%" height="100%" frameborder="0" style="border:0" allowfullscreen></iframe>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="row second-row" >
+					<div class="col-wd-12 col-md-3 col-sm-3">
+						<div class="footer-column">
+							<div class="footer-info first-div">
+								<span class="info-title">INFORMATION</span>
+								<ul>
+									<li><a href="">About Us</a></li>
+									<li><a href="">Delivery</a></li>
+									<li><a href="">Contact Us</a></li>
+									<li><a href="">Privacy Pollicy</a></li>
+									<li><a href="">Terms & Conditions</a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div class="col-wd-12 col-md-3 col-sm-3">
+						<div class="footer-column">
+							<div class="footer-info">
+								<span class="info-title">CUSTOMER SERVICE</span>
+								<ul>
+									<li><a href="">About Us</a></li>
+									<li><a href="">Delivery</a></li>
+									<li><a href="">Contact Us</a></li>
+									<li><a href="">Privacy Pollicy</a></li>
+									<li><a href="">Terms & Conditions</a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div class="col-wd-12 col-md-3 col-sm-3">
+						<div class="footer-column">
+							<div class="footer-info">
+								<span class="info-title">EXTRAS</span>
+								<ul>
+									<li><a href="">About Us</a></li>
+									<li><a href="">Delivery</a></li>
+									<li><a href="">Contact Us</a></li>
+									<li><a href="">Privacy Pollicy</a></li>
+									<li><a href="">Terms & Conditions</a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div class="col-wd-12 col-md-3 col-sm-3">
+						<div class="footer-column">
+							<div class="footer-info">
+								<span class="info-title">MY ACCOUNT</span>
+								<ul>
+									<li><a href="">About Us</a></li>
+									<li><a href="">Delivery</a></li>
+									<li><a href="">Contact Us</a></li>
+									<li><a href="">Privacy Pollicy</a></li>
+									<li><a href="">Terms & Conditions</a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer><!-- /footer -->
+	<div id="copyright">
+		<div class="grid">
+			<div class="row">
+				<div class="col-wd-12 col-md-12 col-sm-12">
+					<div class="col-wd-12 col-md-12 col-sm-4 copyright left">
+						<p>&copy; 2012 <a href="" title="">Magento Demo Store</a>. All Rights Reserved.</p>
+					</div>
+					<div class="col-wd-12 col-md-12 col-sm-4 payments right">
+						<img src="images/payment.png" alt="">
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	<script src="js/menu.js" type="text/javascript" charset="utf-8" ></script>
+	<script src="js/application.js" type="text/javascript" charset="utf-8"  ></script>
+	<script src="js/jquery.flexslider.js" type="text/javascript" charset="utf-8"></script>
+	<script src="nouislider/nouislider.js" type="text/javascript" charset="utf-8" async defer></script>
+</div>
+</body>
+</html>
